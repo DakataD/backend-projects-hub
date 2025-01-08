@@ -1,0 +1,45 @@
+<main>
+    <div class="planet-details">
+        <img src="{{image}}" alt="{{name}}" class="planet-image">
+        <div class="planet-info">
+            <h2>Name: {{name}}</h2>
+            <p><strong>Age:</strong> {{age}} billion years</p>
+            <p><strong>Solar System:</strong> {{solarSystem}}</p>
+            <p><strong>Type:</strong> {{type}}</p>
+            <p><strong>Moons:</strong> {{moons}}</p>
+            <p><strong>Size:</strong> {{size}} km</p>
+            <p><strong>Rings:</strong> {{rings}}</p>
+            <p><strong>Description:</strong> {{description}}</p>
+        </div>
+
+        <div class="actions">
+            {{#if user}}
+            {{#if isOwner}}
+            <a class="edit-btn" href="/planets/{{_id}}/edit">Edit</a>
+            <a class="delete-btn" href="/planets/{{_id}}/delete">Delete</a>
+            {{else}}
+            {{#if isLiked}}
+            <p id="liked-message" class="liked-message hidden">You've already liked this planet.</p>
+            {{else}}
+            <a id="like-button" class="like-btn" href="/planets/{{_id}}/like">Like</a>
+            {{/if}}
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</main>
+
+
+{{!-- <div class="planet-details">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e64e74fd-a498-4cdf-b98a-0876f9e54831/d5ich6s-cbf349d4-4ea4-4dd6-a6db-769feefe98f5.jpg/v1/fill/w_900,h_474,q_75,strp/alpha_centauri_bb_by_eburacum45_d5ich6s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDc0IiwicGF0aCI6IlwvZlwvZTY0ZTc0ZmQtYTQ5OC00Y2RmLWI5OGEtMDg3NmY5ZTU0ODMxXC9kNWljaDZzLWNiZjM0OWQ0LTRlYTQtNGRkNi1hNmRiLTc2OWZlZWZlOThmNS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.E7E9_PCtIsRdKCPAPmnZSrk3CTKTBkx5hnokU57pDRk"
+        alt="Alpha Centauri Bb" class="planet-image">
+    <div class="planet-info">
+        <h2>Name: Alpha Centauri Bb</h2>
+        <p><strong>Age:</strong> 4.5 billion years</p>
+        <p><strong>Solar System:</strong> Alpha Centauri</p>
+        <p><strong>Type:</strong> Inner</p>
+        <p><strong>Moons:</strong> 2</p>
+        <p><strong>Size:</strong> 12,000 km</p>
+        <p><strong>Rings:</strong> No</p>
+        <p><strong>Description:</strong> Alpha Centauri Bb is a rocky planet with 2 moons.</p>
+    </div> --}}

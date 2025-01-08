@@ -1,0 +1,41 @@
+<main>
+    <form class="edit-form" action="" method="">
+        <label for="name">Name of Planet:</label>
+        <input type="text" id="name" name="name" value="{{name}}">
+
+        <label for="age">Age (in billion years):</label>
+        <input type="number" id="age" name="age" value="{{age}}">
+
+        <label for="solarSystem">Solar System:</label>
+        <input type="text" id="solarSystem" name="solarSystem" value="{{solarSystem}}">
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="{{type}}" hidden="hidden" selected="selected">{{type}}</option>
+            <option value="inner" selected>Inner</option>
+            <option value="outer">Outer</option>
+            <option value="dwarf">Dwarf</option>
+        </select>
+
+        <label for="moons">Moons (count):</label>
+        <input type="number" id="moons" name="moons" value="{{moons}}">
+
+        <label for="size">Size (in km):</label>
+        <input type="number" id="size" name="size" value="{{size}}">
+
+        <label for="rings">Rings:</label>
+        <select id="rings" name="rings">
+            <option value="{{rings}}" hidden="hidden" selected="selected">{{rings}}</option>
+            <option value="yes">Yes</option>
+            <option value="no" selected>No</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4">{{description}}</textarea>
+
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image" value="{{image}}">
+
+        <button type="submit">Save Changes</button>
+    </form>
+</main>

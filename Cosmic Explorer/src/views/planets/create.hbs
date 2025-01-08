@@ -1,0 +1,41 @@
+<main>
+    <form class="planet-form" action="/planets/create" method="post">
+        <label for="name">Name of Planet:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="age">Age (in billion years):</label>
+        <input type="number" id="age" name="age">
+
+        <label for="solarSystem">Solar System:</label>
+        <input type="text" id="solarSystem" name="solarSystem">
+
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="---" checked>---</option>
+            <option value="Inner">Inner</option>
+            <option value="Outer">Outer</option>
+            <option value="Dwarf">Dwarf</option>
+        </select>
+
+        <label for="moons">Moons (count):</label>
+        <input type="number" id="moons" name="moons">
+
+        <label for="size">Size (in km):</label>
+        <input type="number" id="size" name="size">
+
+        <label for="rings">Rings:</label>
+        <select id="rings" name="rings">
+            <option value="---" checked>---</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image">
+
+        <button type="submit">Add Planet</button>
+    </form>
+</main>
